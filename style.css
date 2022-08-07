@@ -49,7 +49,6 @@ nav {
   }
 nav .container{
     display: grid;
-    justify-items: auto;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "a . c"
@@ -236,7 +235,7 @@ main .about .right a:hover{
     flex-basis: 100%;
     flex: 1;
     width: 100px;
-    margin: 5px 5x;
+    margin: 5px 5px;
     display: inline-block;
     border-radius: 10px ;
     box-shadow: 5px 5px 10px rgb(207, 207, 207), -5px -5px 10px rgb(233, 232, 232);
@@ -265,7 +264,7 @@ main .about .right a:hover{
 .browse-items a:hover{
     background-color: var(--color-danger);
 }
-main h2{
+main .browse-items h2{
     color: var(--color-orange);
 }
 main .contact{
@@ -277,9 +276,9 @@ main .contact{
     align-items: center;
 }
 main .contact img:first-of-type{
-    position: relative;
+    position: absolute;
     top: 25rem;
-    left: 25rem;
+    left: 15rem;
     height: 40rem;
     width: 60rem;
     border-radius: 1rem;
@@ -294,8 +293,68 @@ main .contact img:last-of-type{
     width: 45rem;
 }
 main .contact .left{
-    padding-top: 40rem;
-    padding-right: 40rem;
-    padding-left: 50rem;
+    padding-top: 70rem;
+    padding-right: 80rem;
+    padding-left: 20rem;
+    padding-bottom: 69rem;
+   
+}
+main .contact .left a{
+    border: 2px solid var(--color-pink);
+    color: var(--color-dark);
+    padding: 1rem;
+    text-align: center;
+}
+main .contact .left p{
+    padding-bottom: 5rem;
+}
+main .contact .left a:hover{
+    background-color: var(--color-danger);
+}
+main .sign-up{
+    width:50rem;
+    background-color: var(--color-pink);
+    display: grid;
+    margin: 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 10rem;
+    position: relative;
+    grid-template-areas: " . header . ."
+    ". email submit ."
+    ". . . .";
+}
+main .sign-up h3{
+    grid-area: header;
+}
+main .sign-up input{
+    grid-area: email;
+}
+main .sign-up a{
+    border: 2px solid var(--color-orange);
+    color: var(--color-dark);
+    text-align: center;
+    grid-area: submit;
+}
+main .sign-up a:hover{
+    background-color: var(--color-danger);
+}
+.footer{
+    width: 100%;
+    background-color: var(--color-dark);
+    padding: 0.7rem 0;
+    display: grid;
+    justify-items: center;
+    color: var(--color-white);
+    position: relative;
 
+    
+}
+.footer h2{
+    color: var(--color-white);
+}
+.footer .icon{
+    column-count: 2;
+    
 }
