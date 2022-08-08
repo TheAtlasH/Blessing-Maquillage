@@ -170,7 +170,7 @@ main .about{
     display:flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 30rem;
+    padding-bottom: 20rem;
 }
 main .about img:first-of-type{
     position: relative;
@@ -240,7 +240,7 @@ main .about .right a:hover{
     border-radius: 10px ;
     box-shadow: 5px 5px 10px rgb(207, 207, 207), -5px -5px 10px rgb(233, 232, 232);
     padding: 25px;
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
 }
 
 .browse-items img{
@@ -296,7 +296,7 @@ main .contact .left{
     padding-top: 70rem;
     padding-right: 80rem;
     padding-left: 20rem;
-    padding-bottom: 69rem;
+    padding-bottom: 30rem;
    
 }
 main .contact .left a{
